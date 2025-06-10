@@ -9,7 +9,7 @@ on:
 
 jobs:
  hello_word:
-    runs-on: Windows 11
+    runs-on: ubuntu-latest
     steps:
       - name: "Print hello world"
         run: echo "Hello World"
