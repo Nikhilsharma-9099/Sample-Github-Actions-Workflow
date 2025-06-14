@@ -10,6 +10,8 @@ on:
           branches: 
             - main
             - test
+    
+   workflow_dispatch: 
 
 
 jobs: 
@@ -17,6 +19,12 @@ jobs:
        runs-on: ubuntu-latest
        steps:
             - name: "Running on main/test push"
-              run: echo "Running on main/test push" 
+              run: echo "Running on main/test push"
+    
+    on-pull-request:
+       runs-on: ubuntu-latest
+       steps:
+            - name: "Running on pull request"
+              run: echo "Running on pull request"
 
     
